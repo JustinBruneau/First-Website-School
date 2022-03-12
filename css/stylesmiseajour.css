@@ -1,0 +1,105 @@
+/*Importation de police Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background: #333;
+}
+
+/*Box Blanche arriere plan*/
+.centre{
+    margin-top: 5px;
+    width: 1070px;
+    height: 720px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    background: -o-linear-gradient(30deg, #692864 0%, #3272da 100%);
+    background: linear-gradient(60deg, #81387b 0%, #3272da 100%);
+}
+
+/*titre principale*/
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: white;
+}
+
+/*sous titre*/
+h1{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+/*date*/
+h3{
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+ul{
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.boxacceuil{
+    border: 1px solid rgb(255, 255, 255);
+    background: white;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-bottom: 5px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.boxprojet{
+    border: 1px solid rgb(255, 255, 255);
+    background: white;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 480px;
+    padding-bottom: 5px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.boxcv{
+    border: 1px solid rgb(255, 255, 255);
+    background: white;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.boxlogiciel{
+    border: 1px solid rgb(255, 255, 255);
+    background: white;
+    width: 550px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 480px;
+    padding-bottom: 5px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}

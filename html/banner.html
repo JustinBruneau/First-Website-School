@@ -1,0 +1,29 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/stylesbanner.css">
+  <link rel="shortcut icon" href="../img/favicon.png"> <!--Lien favicon-->
+  <title> Black & White </title>
+
+</head>
+<body>
+
+<!--Texte-->
+  <section>
+    <h2>Justin<br><span>Bruneau</span></h2>
+    <div class="black"></div>
+    <img src="../img/text.png">
+  </section>
+
+<!--Javascript-->
+  <script>
+    const black = document.querySelector('.black');
+    window.onmousemove = function(e){
+      const x = e.clientX;
+      black.style.left = x + 'px';
+    }
+  </script>
+
+
+</body>
+</html>

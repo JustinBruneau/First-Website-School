@@ -1,0 +1,252 @@
+/*Importation de police Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+
+
+/*===== HEADER =====*/
+
+
+
+/*Style de la page*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Style de la page*/
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Style de la box de la barre de navigation ou header*/
+header{
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  margin: auto;
+  align-items: center;
+  border-bottom: 1px black solid;
+  background: -o-linear-gradient(30deg, #692864 0%, #3272da 100%);
+  background: linear-gradient(60deg, #81387b 0%, #3272da 100%);
+  background-repeat: no-repeat;
+}
+
+/*logo et barre de navigation*/
+.logo-container,.nav-links{
+  display: flex;
+  margin-left: 5px;
+}
+
+/*Espace contenant le logo par rapport a la barre de navigation*/
+.logo-container{
+  flex: 1;
+  font-size: 25px;
+  height: 40px;
+}
+
+/*mettre le logo en face du nom du site*/
+.logo{
+  font-weight: 400;
+  margin: 2px;
+}
+
+/*Espace contenant les boutons de navigations par rapport au logo*/
+nav{
+  flex: 1;
+}
+
+/*Espacer les boutons entre eux*/
+.nav-links{
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+/*Modifier la decoration des boutons*/
+.nav-link{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 2px black solid;
+}
+
+/*Passer la souris sur le bouton pour affichier un traie en dessous*/
+.nav-link:hover{
+  border-bottom: 2px rgb(255, 255, 255) solid;
+}
+
+
+
+
+
+/*===== BODY =====*/
+
+/*fond color body*/
+.header {
+  position: relative;
+  text-align: center;
+  background: -o-linear-gradient(30deg, #692864 0%, #3272da 100%);
+  background: linear-gradient(60deg, #81387b 0%, #3272da 100%);
+  color: #fff;
+}
+
+/*Box titre dans body*/
+.inner-header {
+  height: 65vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*Box texte create by*/
+.content {
+  position: relative;
+  height: 20vh;
+  text-align: center;
+  background-color: #0000ff;
+}
+
+a{
+  color: black;
+}
+
+/*Box texte create by + Body*/
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+/*Vague bleu*/
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 100px;
+}
+
+/*Mouvement vague bleu*/
+.parallax > use {
+  -webkit-animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+          animation: moveForever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+
+/*Mouvement 4 vague bleu*/
+.parallax > use:nth-child(1) {
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+}
+
+
+/*Mouvement vague bleu*/
+@-webkit-keyframes moveForever {
+  0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Mouvement vague bleu*/
+@keyframes moveForever {
+  0% {
+      -webkit-transform: translate3d(-90px, 0, 0);
+              transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+      -webkit-transform: translate3d(85px, 0, 0);
+              transform: translate3d(85px, 0, 0);
+  }
+}
+
+/*Taille vague bleu*/
+@media (max-width : 768px) {
+  h1 {
+      font-size: 24px;
+  }
+  .content {
+      height: 30vh;
+  }
+  .waves {
+      height: 40px;
+      min-height: 40px;
+  }
+}
+
+/*Titre Site Web*/
+h1 {
+  font-family: Quicksand, "Segoe UI", sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+}
+
+/*Titre create by*/
+p {
+  font-family: Quicksand, "Segoe UI", sans-serif;
+  font-size: 14px;
+  color: white;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+  cursor: pointer;
+}
+p:hover {
+  border-bottom: 1px rgb(0, 0, 0) solid;
+}
+
+
+/*===== SCROLL_BAR =====*/
+
+/*Taille du fond*/
+::-webkit-scrollbar{
+  width: 12px;
+}
+
+/*Couleur du fond*/
+::-webkit-scrollbar-track{
+  border: 2px solid #000000;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*Couleur de la barre*/
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(45deg, #0618be,  #31adff);
+}
+
+::-webkit-scrollbar-button{
+  background-color: rgb(0, 0, 0);
+}

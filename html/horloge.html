@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/styleshorloge.css">
+  <title>Horloge</title>
+
+</head>
+<body>
+
+  <div id="clock">
+    <h2>Horloge Numérique</h2>
+    <div id="time">
+      <div><span id="hour">00</span><span>Heures</span></div>
+      <div><span id="minutes">00</span><span>Minutes</span></div>
+      <div><span id="seconds">00</span><span>Secondes</span></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function clock(){
+
+      var heures = document.getElementById('hour');
+      var minutes = document.getElementById('minutes');
+      var secondes = document.getElementById('seconds');
+
+      var h = new Date().getHours();
+      var m = new Date().getMinutes();
+      var s = new Date().getSeconds();
+
+      heures.innerHTML = h;
+      minutes.innerHTML = m;
+      secondes.innerHTML = s;
+    }
+
+    var interval = setInterval(clock, 1000);
+
+  </script>
+
+</body>
+</html>

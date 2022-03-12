@@ -1,0 +1,81 @@
+/*Importation de police Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*, ::before ::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #000;
+}
+
+.container{
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 100px auto 0;
+  
+}
+
+.cube{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 15s infinite linear;
+  
+}
+
+.face{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.top{
+  background: #000;
+  transform: rotateX(90deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+}
+
+.bottom{
+  background: #000;
+  transform: rotateX(-90deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.right{
+  background: #000;
+  transform: rotateY(90deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.left{
+  background: #000;
+  transform: rotateY(-90deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.front{
+  background: #000;
+  transform: rotateX(0deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.back{
+  background: #000;
+  transform: rotateX(-180deg) translateZ(100px);
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+@keyframes spin{
+  from{
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to{
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
